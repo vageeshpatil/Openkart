@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<suite name="Cross Browser Suite" parallel="tests" thread-count="3">
+
+    <!-- Chrome Test -->
+    <test name="Chrome Test">
+        <parameter name="os" value="windows"/>
+        <parameter name="browser" value="chrome"/>
+        <classes>
+            <class name="testCases.TC_001_AccountRegistrationTest"/>
+        </classes>
+    </test>
+
+    <!-- Edge Test -->
+    <test name="Edge Test">
+        <parameter name="os" value="windows"/>
+        <parameter name="browser" value="edge"/>
+        <classes>
+            <class name="testCases.TC_001_AccountRegistrationTest"/>
+        </classes>
+    </test>
+
+    <!-- Firefox Test -->
+    <test name="Firefox Test">
+        <parameter name="os" value="windows"/>
+        <parameter name="browser" value="firefox"/>
+        <classes>
+            <class name="testCases.TC_001_AccountRegistrationTest"/>
+        </classes>
+    </test>
+
+</suite>

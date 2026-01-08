@@ -1,0 +1,13 @@
+# Created at 2025-12-19T01:38:07.578
+java.lang.NoClassDefFoundError: org/apache/maven/surefire/spi/MasterProcessChannelProcessorFactory
+	at org.apache.maven.surefire.booter.ForkedBooter.lookupDecoderFactory(ForkedBooter.java:470)
+	at org.apache.maven.surefire.booter.ForkedBooter.setupBooter(ForkedBooter.java:125)
+	at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:506)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
+Caused by: java.lang.ClassNotFoundException: org.apache.maven.surefire.spi.MasterProcessChannelProcessorFactory
+	at java.base/jdk.internal.loader.BuiltinClassLoader.loadClass(BuiltinClassLoader.java:636)
+	at java.base/jdk.internal.loader.ClassLoaders$AppClassLoader.loadClass(ClassLoaders.java:182)
+	at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:519)
+	... 4 more
+
+
