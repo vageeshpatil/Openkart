@@ -1,2 +1,0 @@
-D:\imp\selenium\OpenKart
-mvn test
