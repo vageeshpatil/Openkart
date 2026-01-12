@@ -32,6 +32,8 @@ import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Parameters;
 
 import io.github.bonigarcia.wdm.WebDriverManager;
+import pageObjects.HomePage;
+import pageObjects.LoginPage;
 
 public class BaseClass {
 	
@@ -133,7 +135,26 @@ public class BaseClass {
 
 		driver.get(p.getProperty("appURL")); // get url from config.properties file
 		driver.manage().window().maximize();
+		
+			}
+	
+	//adding a method to login to page 
+	public void doLogin() {
+		HomePage hp=new HomePage(driver);
+		
+		hp.clickMyAccount();
+					
+		hp.clickLogin();
+		
+		LoginPage lp=new LoginPage(driver);
+		
+		lp.setEmail(p.getProperty("email"));
+		
+		lp.setPassword(p.getProperty("password")); 
+		
+		lp.clickLogin();
 	}
+
 
 	@AfterClass(groups = { "Master", "Sanity", "Regression" }) //Step8 groups added
 	public void teadDown() {

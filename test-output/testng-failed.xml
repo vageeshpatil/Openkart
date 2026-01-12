@@ -1,27 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
-<suite name="Failed suite [Suite]">
-  <listeners>
-    <listener class-name="Utilities.ExtentReportManager"/>
-  </listeners>
-  <test thread-count="5" name="Linux-Chrome(failed)">
-    <parameter name="os" value="Linux"/>
+<suite name="Failed suite [Master Suite]">
+  <test thread-count="5" name="Test(failed)">
+    <parameter name="os" value="windows"/>
     <parameter name="browser" value="chrome"/>
     <classes>
-      <class name="testCases.TC_001_AccountRegistrationTest">
-        <methods>
-          <include name="test_account_Registration"/>
-          <include name="teadDown"/>
-          <include name="setup"/>
-        </methods>
-      </class> <!-- testCases.TC_001_AccountRegistrationTest -->
-      <class name="testCases.TC_002_LoginTest">
+      <class name="testCases.TC_004_SearchPage">
         <methods>
           <include name="teadDown"/>
-          <include name="test_Login"/>
+          <include name="verify_product"/>
           <include name="setup"/>
         </methods>
-      </class> <!-- testCases.TC_002_LoginTest -->
+      </class> <!-- testCases.TC_004_SearchPage -->
     </classes>
-  </test> <!-- Linux-Chrome(failed) -->
-</suite> <!-- Failed suite [Suite] -->
+  </test> <!-- Test(failed) -->
+</suite> <!-- Failed suite [Master Suite] -->
