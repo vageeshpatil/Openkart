@@ -5,13 +5,13 @@
     <parameter name="os" value="windows"/>
     <parameter name="browser" value="chrome"/>
     <classes>
-      <class name="testCases.TC_004_SearchPage">
+      <class name="testCases.TC_005_AddToCart">
         <methods>
           <include name="teadDown"/>
-          <include name="verify_product"/>
+          <include name="AddingItemsToCart"/>
           <include name="setup"/>
         </methods>
-      </class> <!-- testCases.TC_004_SearchPage -->
+      </class> <!-- testCases.TC_005_AddToCart -->
     </classes>
   </test> <!-- Test(failed) -->
 </suite> <!-- Failed suite [Master Suite] -->

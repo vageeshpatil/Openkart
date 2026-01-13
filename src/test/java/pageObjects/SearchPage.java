@@ -1,10 +1,14 @@
 package pageObjects;
 
+import java.time.Duration;
 import java.util.List;
 
+import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
+import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.WebDriverWait;
 
 public class SearchPage extends BasePage
 {   
@@ -50,16 +54,52 @@ public class SearchPage extends BasePage
 		}
 	}
 	
-	public boolean isProductExist(String productName) {
-		boolean flag =false;
+	public boolean isProductExist(String productName) 
+	{
+		boolean flag = false;
 		for (WebElement product:searchProducts) {
 			if(product.getText().equals(productName))
 			{
-				flag=true;
+				flag= true;
 				break;
 			}
 		}
 		return flag;
 	}
+	
+	
+	public void selectProduct(String productName)
+	{
+		for(WebElement product:searchProducts)
+		{				
+			if(product.getText().equals(productName))
+			{
+				product.click();
+			}
+		}
+	
+	}
+	
+	public void setQuantity(String qty)
+	{
+		txtquantity.clear();
+		txtquantity.sendKeys(qty);
+	}
+	
+	public void addToCart()
+	{
+		btnaddToCart.click();
+	}
+	
+	public boolean checkConfMsg()
+	{
+		try
+		{
+		return cnfMsg.isDisplayed();
+		}
+		catch(Exception e)
+		{
+			return false;
+		}
+	}
 }
-

@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<suite name="Cross Browser Suite" parallel="tests" thread-count="3">
+<suite name="Cross Browser Suite" >
 
     <!-- Chrome Test -->
     <test name="Chrome Test">

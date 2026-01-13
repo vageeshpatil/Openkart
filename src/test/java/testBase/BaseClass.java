@@ -31,7 +31,7 @@ import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Parameters;
 
-import io.github.bonigarcia.wdm.WebDriverManager;
+
 import pageObjects.HomePage;
 import pageObjects.LoginPage;
 
@@ -41,7 +41,7 @@ public class BaseClass {
 	
 	public Logger logger;// for Logging
 	
-	public static WebDriver driver;  // make it static so that you can use same instance in Extent report manager
+	public WebDriver driver;  // make it static so that you can use same instance in Extent report manager
 	
 
 	@BeforeClass(groups = { "Master", "Sanity", "Regression" }) //Step8 groups added
@@ -119,13 +119,13 @@ public class BaseClass {
 		if(p.getProperty("executive_env").equalsIgnoreCase("local")) {
 	
 		if (br.equals("chrome")) {
-			WebDriverManager.chromedriver().setup();
+			
 			driver = new ChromeDriver();
 		} else if (br.equals("edge")) {
-			WebDriverManager.edgedriver().setup();
+			
 			driver = new EdgeDriver();
 		} else {
-			WebDriverManager.chromedriver().setup();
+			
 			driver = new ChromeDriver();
 		}
 		}

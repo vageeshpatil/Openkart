@@ -31,8 +31,8 @@ public class TC_004_SearchPage  extends BaseClass{
 		 
 		 sg.searchlist();
 		 
-		 sg.isProductExist("MacBook");
-		 Assert.assertEquals(sg.isProductExist("MacBook"), true);
+		 boolean status = sg.isProductExist("MacBook");
+		 Assert.assertEquals(status, true);
 	
 		}catch(Exception e) {
 			Assert.fail();
@@ -42,5 +42,3 @@ public class TC_004_SearchPage  extends BaseClass{
 		
 		
 	}
-
-

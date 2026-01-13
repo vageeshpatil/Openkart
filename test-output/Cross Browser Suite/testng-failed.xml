@@ -27,17 +27,4 @@
       </class> <!-- testCases.TC_001_AccountRegistrationTest -->
     </classes>
   </test> <!-- Chrome Test(failed) -->
-  <test thread-count="3" parallel="tests" name="Edge Test(failed)">
-    <parameter name="os" value="windows"/>
-    <parameter name="browser" value="edge"/>
-    <classes>
-      <class name="testCases.TC_001_AccountRegistrationTest">
-        <methods>
-          <include name="test_account_Registration"/>
-          <include name="teadDown"/>
-          <include name="setup"/>
-        </methods>
-      </class> <!-- testCases.TC_001_AccountRegistrationTest -->
-    </classes>
-  </test> <!-- Edge Test(failed) -->
 </suite> <!-- Failed suite [Cross Browser Suite] -->

@@ -11,7 +11,8 @@
  <class name="testCases.TC_002_LoginTest"/>-->
 <!-- <class name="testCases.TC_003_LoginDDT"/>
  <class name="testCases.TC_003_EndToEnd"/>-->
- <class name="testCases.TC_004_SearchPage"/>
+ <!--<class name="testCases.TC_004_SearchPage"/>-->
+  <class name="testCases.TC_005_AddToCart"/>
 </classes>
 </test>
 <!--  Test  -->

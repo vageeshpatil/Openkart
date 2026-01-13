@@ -12,13 +12,13 @@ public class ShoppingCartPage extends BasePage
 	}
 	
 	//@FindBy(xpath="//button[@aria-expanded='false']")
-	@FindBy(xpath="//div[@id='cart']")
+	@FindBy(xpath="//div[@id ='cart']/button")
 	WebElement btnItems;
 	
-	@FindBy(xpath="//strong[normalize-space()='View Cart']")
+	@FindBy(xpath="//a[normalize-space()='View Cart']")
 	WebElement lnkViewCart;
 	
-	@FindBy(xpath="//*[@id='content']/div[2]/div/table//strong[text()='Total:']//following::td")
+	@FindBy(xpath="//table[@class=\"table table-bordered\"]//strong[text()='Total:']//following::td")
 	WebElement lblTotalPrice;  //$246.40
 	
 	@FindBy(xpath="//a[text()='Checkout']")
