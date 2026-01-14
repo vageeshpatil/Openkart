@@ -29,8 +29,8 @@
         <forkCount>0</forkCount>
         <reuseForks>false</reuseForks>
         <suiteXmlFiles>
-         <!-- <suiteXmlFile>master.xml</suiteXmlFile>-->
-         <suiteXmlFile>parallel.xml</suiteXmlFile>
+         <suiteXmlFile>master.xml</suiteXmlFile>
+         <!-- <suiteXmlFile>parallel.xml</suiteXmlFile>-->
         </suiteXmlFiles>
       </configuration>
     </plugin>
