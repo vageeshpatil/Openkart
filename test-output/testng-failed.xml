@@ -1,17 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
-<suite parallel="classes" name="Failed suite [Parallel-Classes-Suite]" guice-stage="DEVELOPMENT">
-  <parameter name="os" value="windows"/>
-  <parameter name="browser" value="chrome"/>
-  <test thread-count="5" parallel="classes" name="Chrome Parallel Classes(failed)">
+<suite name="Failed suite [Master Suite]">
+  <test thread-count="5" name="Test(failed)">
+    <parameter name="os" value="windows"/>
+    <parameter name="browser" value="chrome"/>
     <classes>
-      <class name="testCases.TC_004_SearchPage">
+      <class name="testCases.TC_006_EndToEnd">
         <methods>
           <include name="teadDown"/>
-          <include name="verify_product"/>
           <include name="setup"/>
+          <include name="endToendTest"/>
         </methods>
-      </class> <!-- testCases.TC_004_SearchPage -->
+      </class> <!-- testCases.TC_006_EndToEnd -->
     </classes>
-  </test> <!-- Chrome Parallel Classes(failed) -->
-</suite> <!-- Failed suite [Parallel-Classes-Suite] -->
+  </test> <!-- Test(failed) -->
+</suite> <!-- Failed suite [Master Suite] -->

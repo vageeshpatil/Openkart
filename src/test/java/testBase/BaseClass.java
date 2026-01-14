@@ -19,6 +19,7 @@ import org.openqa.selenium.OutputType;
 import org.openqa.selenium.Platform;
 import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.edge.EdgeDriver;
@@ -27,6 +28,8 @@ import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.firefox.FirefoxOptions;
 import org.openqa.selenium.remote.DesiredCapabilities;
 import org.openqa.selenium.remote.RemoteWebDriver;
+import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Parameters;
@@ -129,7 +132,8 @@ public class BaseClass {
 			driver = new ChromeDriver();
 		}
 		}
-					
+		
+		driver.manage().deleteAllCookies();
 		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
 	
 
@@ -139,7 +143,7 @@ public class BaseClass {
 			}
 	
 	//adding a method to login to page 
-	public void doLogin() {
+	/*public void doLogin() {
 		HomePage hp=new HomePage(driver);
 		
 		hp.clickMyAccount();
@@ -153,7 +157,14 @@ public class BaseClass {
 		lp.setPassword(p.getProperty("password")); 
 		
 		lp.clickLogin();
+	}*/
+	
+	
+	public void waitForElementToBeClickable(WebElement element) {
+	    WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
+	    wait.until(ExpectedConditions.elementToBeClickable(element));
 	}
+
 
 
 	@AfterClass(groups = { "Master", "Sanity", "Regression" }) //Step8 groups added
