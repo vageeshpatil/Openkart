@@ -38,7 +38,6 @@ public class TC_005_AddToCart extends BaseClass {
 			Assert.fail();
 		}
 
-		logger.info(" Finished TC_004_SearchProductTest ");
 
 	}
 }

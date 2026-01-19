@@ -74,11 +74,10 @@ public class TC_006_EndToEnd extends BaseClass {
 	{
 		sp.selectProduct(p.getProperty("searchProductName"));
 		sp.setQuantity("2");
-		Thread.sleep(3000);
 		sp.addToCart();
 		
 	}
-	
+	Thread.sleep(3000);
 	System.out.println("Added product to cart ? "+ sp.checkConfMsg());
 	myassert.assertEquals(sp.checkConfMsg(),true);
 		
