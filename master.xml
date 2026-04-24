@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
 
 <suite name="Master Suite">
 
@@ -9,11 +9,11 @@
 <classes>
 <!--<class name="testCases.TC_001_AccountRegistrationTest"/>
  <class name="testCases.TC_002_LoginTest"/>-->
-<!-- <class name="testCases.TC_003_LoginDDT"/>-->
+<!-- <class name="testCases.TC_003_LoginDDT"/>
  <class name="testCases.TC_003_EndToEnd"/>
  <class name="testCases.TC_004_SearchPage"/>
-  <class name="testCases.TC_005_AddToCart"/>
-  <class name="testCases.TC_006_EndToEnd"/>
+  <class name="testCases.TC_005_AddToCart"/>-->
+  <class name="testCases.TC__007_OrderHistory"/>
 </classes>
 </test>
 <!--  Test  -->

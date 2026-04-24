@@ -28,6 +28,10 @@ public class TC__007_OrderHistory extends BaseClass {
 		OrderHistory oh = new OrderHistory(driver);
 		
 		oh.clickOrderHistory();
+
+		oh.clickcart();
+		
+		
 		
 		
 		
