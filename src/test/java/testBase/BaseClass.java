@@ -58,7 +58,7 @@ public class BaseClass {
 		p.load(file);
 		
 				
-		logger = LogManager.getLogger(this.getClass());// for Logger  
+		logger = LogManager.getLogger(this.getClass());// for Logger   
 		
 		if (p.getProperty("executive_env").equalsIgnoreCase("remote")) {
 			

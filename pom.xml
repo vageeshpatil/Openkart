@@ -134,6 +134,57 @@
 	    <artifactId>commons-email</artifactId>
 	    <version>1.6.0</version>
 	</dependency>
+	
+	
+	
+	<!-- Rest Assured -->
+<dependency>
+    <groupId>io.rest-assured</groupId>
+    <artifactId>rest-assured</artifactId>
+    <version>5.5.0</version>
+</dependency>
+
+<!-- JSON Path -->
+<dependency>
+    <groupId>io.rest-assured</groupId>
+    <artifactId>json-path</artifactId>
+    <version>5.5.0</version>
+</dependency>
+
+<!-- org.json -->
+<dependency>
+    <groupId>org.json</groupId>
+    <artifactId>json</artifactId>
+    <version>20240303</version>
+</dependency>
+
+<!-- Gson -->
+<dependency>
+    <groupId>com.google.code.gson</groupId>
+    <artifactId>gson</artifactId>
+    <version>2.11.0</version>
+</dependency>
+
+<!-- ScribeJava APIs -->
+<dependency>
+    <groupId>com.github.scribejava</groupId>
+    <artifactId>scribejava-apis</artifactId>
+    <version>8.3.3</version>
+</dependency>
+
+<!-- JSON Schema Validator -->
+<dependency>
+    <groupId>io.rest-assured</groupId>
+    <artifactId>json-schema-validator</artifactId>
+    <version>5.5.0</version>
+</dependency>
+
+<!-- XML Schema Validator -->
+<dependency>
+    <groupId>io.rest-assured</groupId>
+    <artifactId>xml-path</artifactId>
+    <version>5.5.0</version>
+</dependency>
   
   </dependencies>
   
