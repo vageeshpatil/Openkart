@@ -1,4 +1,3 @@
-2026-02-12 08:17:06 WARN  TestNGContentHandler:133 - It is strongly recommended to add "<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd" >" at the top of the suite file [D:\imp\selenium\OpenKart\master.xml] otherwise TestNG may fail or not work as expected.
-2026-02-12 08:17:06 INFO  Utils:112 - [TestNG] Running:
-  D:\imp\selenium\OpenKart\master.xml
-
+2026-05-22 22:58:50 INFO  TC_001_AccountRegistrationTest:15 - Strating TC_001_AccountRegistrationtTest
+2026-05-22 22:58:50 INFO  TC_004_SearchPage:15 -  Starting TC_004_SearchProductTest 
+2026-05-22 22:58:50 INFO  TC_005_AddToCart:14 -  Starting TC_005_AddToCartPageTest 
